@@ -1,0 +1,118 @@
+<style>
+html
+{
+    font-family:arial;
+}
+
+#tbl_vending_machine
+{
+    float:left;    
+
+    width:350px; 
+    height:400px;
+    background-color:#8C6954;
+    border-collapse: collapse;
+
+}
+
+#tbl_vending_machine tr td
+{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+
+#computer_panel
+{
+    float:left;
+    color:white;
+    margin:0 0 0 15px;
+    background-color:#BFAF80;
+    border:2px solid #59323C;
+    border-radius: 10px;
+    padding:10px;
+    width:100px;
+    height:370px;
+}
+
+.header_row
+{
+    height:20px;
+}
+.side_row
+{
+    width:20px;
+    
+}
+
+
+.info_bar
+{
+    padding:5px;
+    background:#F2EEB3;
+    border-bottom: 1px solid #BFAF80;
+    border-right: 1px solid #BFAF80;
+    font-size:11px;
+
+}
+#wrapper_btn_purchase
+{
+    text-align:center;
+    margin:15px 0 0 0;
+}
+.panel_inputs
+{
+    text-align:right;
+    margin:5px 0 0 0;
+}
+#input_column, #input_row
+{
+    width:35px;
+}
+
+
+</style>
+
+<table id='tbl_vending_machine'>
+    <tr>
+        <td class='header_row info_bar side_row'>&nbsp;</td>
+        <td class='header_row info_bar'>A</td>
+        <td class='header_row info_bar'>B</td>
+        <td class='header_row info_bar'>C</td>
+        <td class='header_row info_bar'>D</td>
+    </tr>
+    <tr>
+        <td class='side_row info_bar'>1</td>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C3</td>
+        <td>D4</td>
+    </tr>
+    <tr>
+        <td class='side_row info_bar'>2</td>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C3</td>
+        <td>D4</td>
+    </tr>
+    <tr>
+        <td class='side_row info_bar'>3</td>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C3</td>
+        <td>D4</td>
+    </tr>
+    <tr>
+        <td class='side_row info_bar'>4</td>
+        <td>A1</td>
+        <td>B2</td>
+        <td>C3</td>
+        <td>D4</td>
+    </tr>
+
+</table>
+<div id='computer_panel'>
+    <div class='panel_inputs'>Column: <input type='text' name='column'   value=''    id='input_column'/></div>
+    <div class='panel_inputs'>Row: <input    type='text' name='row'      value=''    id='input_row'/></div>
+    <div id='wrapper_btn_purchase'><input type='submit' value='Purchase' /></div>
+</div>
